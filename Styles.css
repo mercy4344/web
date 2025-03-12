@@ -1,0 +1,364 @@
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: grey;
+    text-align: center;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: black;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: orangered;
+    border-radius: 5px;
+}
+
+/* Logo and Header Text */
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo-section img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin-right: 10px;
+}
+.logo-section img1 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin-right: 10px;
+}
+
+.nav-title {
+    color: red;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Header Section */
+.header-background {
+    position: relative;
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    animation: backgroundSlideshow 9s infinite;
+}
+
+.header-content {
+    position: absolute;
+    padding: 20px;
+    border-radius: 10px;
+    color: ghostwhite;
+    padding-top: 20px;
+}
+
+@keyframes backgroundSlideshow {
+    0% { background-image: url(img1\ \(4\).jpg); }
+    50% { background-image: url(img1\ \(1\).jpg); }
+    100% { background-image: url(img1\ \(2\).jpg); }
+}
+
+/* Container for Content */
+.container {
+    padding: 20px;
+    text-align: left;
+    max-width: 800px;
+    margin: auto;
+}
+
+.content-section {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Project Container */
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Individual Project Box */
+.project {
+    width: 25%;
+    background-color: #fff;
+    padding: 15px;
+    margin: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: left;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project:hover {
+    transform: scale(1.03);
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.project h3 {
+    margin-top: 10px;
+    font-size: 22px;
+    color: #333;
+}
+
+.project p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+    .nav-left {
+        justify-content: center;
+    }
+    .header-content {
+        font-size: 16px;
+    }
+    .project {
+        width: 100%;
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* Social Media Icons */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    color: white;
+    font-size: 24px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+    color: orangered;
+}
+/* Container for Adjacent h2 Boxes */
+.content-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.left-box {
+    width: 50%;
+    padding: 20px;
+}
+
+.right-box {
+    width: 50%;
+    text-align: center;
+}
+
+.right-box img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .content-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .left-box, .right-box {
+        width: 100%;
+    }
+}
+/* Container that holds both sections */
+.content-wrapper {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Individual content box */
+.content-box {
+    background-color: white;
+    transition: transform 0.3s ease-in-out;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 48%;
+    box-sizing: border-box;
+    text-align: left;
+}
+/* Content Wrapper */
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Individual Content Box */
+.content-box {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15); /* Improved visibility */
+    width: 45%; /* Increased width */
+    box-sizing: border-box;
+    text-align: left;
+    color: #333; /* Darker text for better contrast */
+    font-size: 18px; /* Larger text */
+    line-height: 1.6;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Sub-section inside each container */
+.sub-section {
+    margin-top: 15px;
+    padding: 15px;
+    background-color: #f1f1f1; /* Light gray for better visibility */
+    border-left: 5px solid orangered;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Make text more readable */
+.content-box h2, .content-box h3 {
+    color: orangered;
+    font-size: 22px;
+}
+
+.content-box ul {
+    padding-left: 20px;
+}
+
+.content-box ul li {
+    margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content-box {
+        width: 70%; /* Full width on smaller screens */
+        padding: 20px;
+    }
+}
+.menu-item{
+    position: absolute;
+    top: 140%;
+    left: 0;
+    border-radius: 10px;
+    color: #fff;
+    background-color: aqua;
+    padding: 0;
+    list-style: none;
+    display: none;
+    overflow: hidden;
+    text-transform: capitalize;
+    box-shadow: 10px 10px 10px #747d8c;
+}
+
+
+
+.contact form {
+    display: grid;
+    grid-gap: 20px;
+}
+
+.contact input, .contact textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact button {
+    background-color: #004080;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.b1{
+    padding: 20px;
+    background-color: orange;
+
+}
+.b1:hover{
+    transform: scale(1.2);
+    background-color: red;
+}
